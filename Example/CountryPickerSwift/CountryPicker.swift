@@ -48,7 +48,7 @@ public struct Country {
     }
 }
 
-public class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource, UIGestureRecognizerDelegate {
+open class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource, UIGestureRecognizerDelegate {
     open var currentCountry: Country? = nil
     @objc public var displayOnlyCountriesWithCodes: [String]?
     @objc public var exeptCountriesWithCodes: [String]?
