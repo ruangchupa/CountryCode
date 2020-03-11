@@ -4,9 +4,14 @@ import PackageDescription
 
 let package = Package(
     name: "CountryCode",
+    products: [
+        .library(
+            name: "CountryPicker",
+            targets: ["CountryPicker"])
+    ],
     targets: [
         .target(
-            name: "CountryCode",
+            name: "CountryPicker",
             path: "Example/CountryPickerSwift")
     ]
 )
