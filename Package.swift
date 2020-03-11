@@ -3,5 +3,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "CountryCode"
+    name: "CountryCode",
+    targets: [
+        .target(
+            name: "CountryCode",
+            path: "Example/CountryPickerSwift")
+    ]
 )
